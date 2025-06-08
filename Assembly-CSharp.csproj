@@ -70,10 +70,12 @@
     <Compile Include="Assets\Scripts\EnnemyData.cs" />
     <Compile Include="Assets\Scripts\CardData.cs" />
     <Compile Include="Assets\Scripts\Ennemy\Villager.cs" />
+    <Compile Include="Assets\Scripts\Character\CharacterData.cs" />
     <Compile Include="Assets\Scripts\CharacterSelector.cs" />
     <Compile Include="Assets\Scripts\EnnemyManager.cs" />
     <Compile Include="Assets\Scripts\Ennemy\Poorman.cs" />
     <Compile Include="Assets\Scripts\GameData.cs" />
+    <Compile Include="Assets\Scripts\Character\CharacterStats.cs" />
     <Compile Include="Assets\Scripts\CombatManager.cs" />
   </ItemGroup>
   <ItemGroup>

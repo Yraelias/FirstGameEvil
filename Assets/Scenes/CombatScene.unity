@@ -999,6 +999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e52507767233404abdef763b078b0de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerData: {fileID: 11400000, guid: cfd239a9f7f56b24997dc24d7e13debb, type: 2}
   PvText: {fileID: 398645205}
   PaText: {fileID: 1677957742}
   CombatText: {fileID: 432445972}

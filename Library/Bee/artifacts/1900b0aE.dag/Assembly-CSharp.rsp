@@ -440,6 +440,8 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.1.2f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/CardData.cs"
 "Assets/Scripts/CardManager.cs"
+"Assets/Scripts/Character/CharacterData.cs"
+"Assets/Scripts/Character/CharacterStats.cs"
 "Assets/Scripts/CharacterSelector.cs"
 "Assets/Scripts/CombatManager.cs"
 "Assets/Scripts/Effect.cs"
