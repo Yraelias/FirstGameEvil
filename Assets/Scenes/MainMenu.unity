@@ -157,6 +157,15 @@ MonoBehaviour:
   DodgePercent: 0
   CritChance: 0
   CritMultiplier: 0
+  MaxPA: 0
+  CurrentPA: 0
+  Exp: 0
+  Current_Level: 0
+  Next_Level: 0
+  Cost_PV: 0
+  Cost_Luck: 0
+  Cost_LifeSteal: 0
+  Point_For_Up: 0
 --- !u!4 &109974081
 Transform:
   m_ObjectHideFlags: 0
