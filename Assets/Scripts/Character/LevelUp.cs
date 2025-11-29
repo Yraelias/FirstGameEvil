@@ -24,6 +24,9 @@ public class LevelUp : MonoBehaviour
     private float PvExp_Cost_Temp;
     private float LuckExp_Cost_Temp;
     private float LifeStealExp_Cost_Temp;
+    private float Luck_Base;
+    private int Hp_Base;
+    private float LifeSteal_Base;
     void Start()
     {
         BtnHpDown.enabled = false;
@@ -45,6 +48,10 @@ public class LevelUp : MonoBehaviour
         HpText.text =  Hp_Temp.ToString() ;
         LuckText.text = Luck_Temp.ToString();
         lifeStealText.text = LifeSteal_Temp.ToString();
+        Luck_Base = PlayerData.Instance.Luck;
+        Hp_Base = PlayerData.Instance.MaxHP;
+        LifeSteal_Base = PlayerData.Instance.LifestealPercent;
+
         Checkpoints();
     }
     void Checkpoints ()
@@ -52,6 +59,9 @@ public class LevelUp : MonoBehaviour
         if (PlayerData.Instance.Point_For_Up < PvExp_Cost_Temp) { BtnHpUp.enabled = false; } else BtnHpUp.enabled = true;
         if (PlayerData.Instance.Point_For_Up < LuckExp_Cost_Temp) { BtnLuckUp.enabled = false; } else BtnLuckUp.enabled = true;
         if (PlayerData.Instance.Point_For_Up < LifeStealExp_Cost_Temp) { BtnLifeStealUp.enabled = false; } else BtnLifeStealUp.enabled = true;
+        BtnHpDown.enabled = Hp_Temp > Hp_Base;
+        BtnLuckDown.enabled = Luck_Temp > Luck_Base;
+        BtnLifeStealDown.enabled = LifeSteal_Temp > LifeSteal_Base;
         Points_Txt.text = PlayerData.Instance.Point_For_Up.ToString();
     }
     public void AddHp()
@@ -59,7 +69,8 @@ public class LevelUp : MonoBehaviour
         Hp_Temp += 1;
         PlayerData.Instance.Point_For_Up = PlayerData.Instance.Point_For_Up - (int)PvExp_Cost_Temp;
         PvExp_Cost_Temp = PvExp_Cost_Temp * 2;
-        PvExp_Cost.text = PvExp_Cost_Temp.ToString();        
+        PvExp_Cost.text = PvExp_Cost_Temp.ToString();    
+        HpText.text = Hp_Temp.ToString();
         Checkpoints();
     }
     public void RemoveHp()
@@ -67,7 +78,8 @@ public class LevelUp : MonoBehaviour
         Hp_Temp -= 1;
         PlayerData.Instance.Point_For_Up = PlayerData.Instance.Point_For_Up + (int)PvExp_Cost_Temp;
         PvExp_Cost_Temp = PvExp_Cost_Temp / 2;
-        PvExp_Cost.text = PvExp_Cost_Temp.ToString();        
+        PvExp_Cost.text = PvExp_Cost_Temp.ToString();
+        HpText.text = Hp_Temp.ToString();
         Checkpoints();
     }
     public void AddLuck()
@@ -75,7 +87,8 @@ public class LevelUp : MonoBehaviour
         Luck_Temp += 1;
         PlayerData.Instance.Point_For_Up = PlayerData.Instance.Point_For_Up - (int)LuckExp_Cost_Temp;
         LuckExp_Cost_Temp = LuckExp_Cost_Temp * 2;
-        LuckExp_Cost.text = LuckExp_Cost_Temp.ToString();        
+        LuckExp_Cost.text = LuckExp_Cost_Temp.ToString();  
+        LuckText.text = Luck_Temp.ToString();
         Checkpoints();
     }
     public void RemoveLuck()
@@ -84,6 +97,7 @@ public class LevelUp : MonoBehaviour
         PlayerData.Instance.Point_For_Up = PlayerData.Instance.Point_For_Up + (int)LuckExp_Cost_Temp;
         LuckExp_Cost_Temp = LuckExp_Cost_Temp / 2;
         LuckExp_Cost.text = LuckExp_Cost_Temp.ToString();
+        LuckText.text = Luck_Temp.ToString();
         Checkpoints();
     }
     public void AddLifeSteal()
@@ -92,6 +106,7 @@ public class LevelUp : MonoBehaviour
         PlayerData.Instance.Point_For_Up = PlayerData.Instance.Point_For_Up + (int)LifeStealExp_Cost_Temp;
         LifeStealExp_Cost_Temp = LifeStealExp_Cost_Temp * 2;
         LifeStealExp_Cost.text = LifeStealExp_Cost_Temp.ToString();
+        lifeStealText.text = LifeSteal_Temp.ToString() ;
         Checkpoints();
     }
     public void RemoveLifeSteal()
@@ -100,6 +115,7 @@ public class LevelUp : MonoBehaviour
         PlayerData.Instance.Point_For_Up = PlayerData.Instance.Point_For_Up + (int)LifeStealExp_Cost_Temp;
         LifeStealExp_Cost_Temp = LifeStealExp_Cost_Temp / 2;
         LifeStealExp_Cost.text = LifeStealExp_Cost_Temp.ToString();
+        lifeStealText.text = LifeSteal_Temp.ToString();
         Checkpoints();
     }
     public void Confirmation()

@@ -8,6 +8,7 @@ public class PlayerData : MonoBehaviour
     public string Archetype;
     public int CurrentHP;
     public int MaxHP;
+    public int Luck;
     public int Armor;
     public float LifestealPercent;
     public float DodgePercent;
