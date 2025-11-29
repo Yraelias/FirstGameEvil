@@ -6,7 +6,8 @@ public class Guard : EnemyBase
     {
         Name = "Garde";
         MaxHP = 20;
-        MinDamage = 3;
-        MaxDamage = 5;
+        MinDamage = 5;
+        MaxDamage = 8;
+        Exp = 15;
     }
 }

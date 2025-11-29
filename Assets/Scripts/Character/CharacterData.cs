@@ -11,5 +11,7 @@ public class CharacterData : ScriptableObject
     public float dodgePercent = 0f;
     public float critChance = 0f;
     public float critMultiplier = 1.5f;
-    
+    public int Cost_PV = 1;
+    public int Cost_Luck = 1;
+    public int Cost_LifeSteal = 1;
 }

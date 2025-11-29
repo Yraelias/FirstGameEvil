@@ -8,5 +8,6 @@ public class Villager : EnemyBase
         MaxHP = 10;
         MinDamage = 1;
         MaxDamage = 5;
+        Exp = 10;
     }
 }

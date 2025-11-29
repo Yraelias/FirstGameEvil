@@ -14,10 +14,7 @@ public class CardManager : MonoBehaviour
     void Start()
     {
         // On crée un deck simple de 3 cartes
-        deck.Add(new CardData("Siphon de Vie", "Inflige 5 DMG, soigne 2 PV", 5, 2, 1));
-        deck.Add(new CardData("Caresse de la Nuit", "Inflige 4 DMG, affaiblit", 4, 0, 1));
-        deck.Add(new CardData("Charme Hypnotique", "Stun pendant 1 tour", 0, 0, 1));
-
+        deck.Add(new CardData("Ataque 1", "Inflige 5 DMG,", 5, 0, 1));
         DisplayCards();
     }
 

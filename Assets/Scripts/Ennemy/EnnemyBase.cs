@@ -6,6 +6,7 @@ public abstract class EnemyBase
     public int MaxHP { get; protected set; }
     public int MinDamage { get; protected set; }
     public int MaxDamage { get; protected set; }
+    public int Exp { get; protected set; }
 
     public virtual int GetRandomDamage()
     {

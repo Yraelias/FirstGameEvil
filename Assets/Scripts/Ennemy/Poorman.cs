@@ -8,5 +8,6 @@ public class Poorman : EnemyBase
         MaxHP = 5;
         MinDamage = 1;
         MaxDamage = 3;
+        Exp = 2;
     }
 }

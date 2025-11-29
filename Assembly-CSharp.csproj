@@ -61,22 +61,32 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.1.2f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\MapNode.cs" />
     <Compile Include="Assets\Scripts\Enum.cs" />
-    <Compile Include="Assets\Scripts\Effect.cs" />
+    <Compile Include="Assets\Scripts\Combat\Effect.cs" />
     <Compile Include="Assets\Scripts\CardManager.cs" />
     <Compile Include="Assets\Scripts\Ennemy\EnnemyBase.cs" />
     <Compile Include="Assets\Scripts\Ennemy\Guard.cs" />
-    <Compile Include="Assets\Scripts\TargetSelector.cs" />
-    <Compile Include="Assets\Scripts\EnnemyData.cs" />
+    <Compile Include="Assets\Scripts\Menu\MainMenuSelector.cs" />
+    <Compile Include="Assets\Scripts\Menu\CharacterSelector.cs" />
+    <Compile Include="Assets\Scripts\Ennemy\EnnemyData.cs" />
+    <Compile Include="Assets\Scripts\Combat\CombatManager.cs" />
     <Compile Include="Assets\Scripts\CardData.cs" />
     <Compile Include="Assets\Scripts\Ennemy\Villager.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterData.cs" />
-    <Compile Include="Assets\Scripts\CharacterSelector.cs" />
-    <Compile Include="Assets\Scripts\EnnemyManager.cs" />
+    <Compile Include="Assets\Scripts\Character\LevelUp.cs" />
+    <Compile Include="Assets\Scripts\Menu\GlobalMenu.cs" />
+    <Compile Include="Assets\Scripts\Menu\WorldHUBSelector.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerLevel.cs" />
+    <Compile Include="Assets\Scripts\Ennemy\EnnemyManager.cs" />
     <Compile Include="Assets\Scripts\Ennemy\Poorman.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\Menu\MainHUBSelector.cs" />
     <Compile Include="Assets\Scripts\GameData.cs" />
+    <Compile Include="Assets\Scripts\Menu\TargetSelector.cs" />
+    <Compile Include="Assets\Scripts\mapManager.cs" />
+    <Compile Include="Assets\Scripts\Menu\WorldSelector.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterStats.cs" />
-    <Compile Include="Assets\Scripts\CombatManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
