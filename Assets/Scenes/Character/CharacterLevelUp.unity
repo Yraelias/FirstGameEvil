@@ -3269,7 +3269,7 @@ MonoBehaviour:
   PvExp_Cost: {fileID: 606671953}
   LuckExp_Cost: {fileID: 482953888}
   LifeStealExp_Cost: {fileID: 2103807475}
-  Points_Txt: {fileID: 0}
+  Points_Txt: {fileID: 810227071}
   BtnHpUp: {fileID: 572383010}
   BtnHpDown: {fileID: 1784923749}
   BtnLuckUp: {fileID: 2027208661}
