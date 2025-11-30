@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\CardData.cs" />
     <Compile Include="Assets\Scripts\Ennemy\Villager.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterData.cs" />
+    <Compile Include="Assets\Scripts\UIButtonSound.cs" />
     <Compile Include="Assets\Scripts\Character\LevelUp.cs" />
     <Compile Include="Assets\Scripts\Menu\GlobalMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\WorldHUBSelector.cs" />
@@ -89,10 +90,12 @@
     <Compile Include="Assets\Scripts\Character\CharacterStats.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\RPG Music Pack\3 RPG Bonus Tracks\Note To Developers.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\RPG Music Pack\3 RPG Bonus Tracks\How To Loop.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -100,6 +103,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\RPG Music Pack\3 RPG Bonus Tracks\How To Convert Audio Files.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
@@ -111,6 +115,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\RPG Music Pack\3 RPG Bonus Tracks\License-Agreement.txt" />
     <None Include="Assets\RPG Button 7\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
