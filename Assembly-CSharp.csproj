@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Ennemy\EnnemyBase.cs" />
     <Compile Include="Assets\Scripts\Ennemy\Guard.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenuSelector.cs" />
+    <Compile Include="Assets\Audio\MusicFader.cs" />
     <Compile Include="Assets\Scripts\Menu\CharacterSelector.cs" />
     <Compile Include="Assets\Scripts\Ennemy\EnnemyData.cs" />
     <Compile Include="Assets\Scripts\Combat\CombatManager.cs" />
